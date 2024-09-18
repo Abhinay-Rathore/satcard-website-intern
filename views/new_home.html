@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/427a1571ad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0c8555221c.js" crossorigin="anonymous"></script>
+    <title>Home - Revin Krishi</title>
+    <link rel="stylesheet" href="new_home.css">
+    <link rel="stylesheet" href="usecases.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Satcard Logo">
+        </div>
+        <!-- Dropdown icon for mobile screens -->
+        <div class = "nav1">
+            <a class="nav-btn "  href="/contact">Book Demo</a>
+        </div>
+        <div class="dropdown">
+            
+            <button class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="/">Home</a>
+                <a href="/product1">System1</a>
+                <a href="/product2">System2</a>
+                <a href="/product3">System3</a>
+                <a href="/usecases">Use Cases</a>
+                <a href="/about">About us</a>
+                
+            </div>
+        </div>
+        <!-- Regular navigation for larger screens -->
+        <nav class = "nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="system-dropdown">
+                    <a href="#">Systems</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/product1">System 1</a></li>
+                        <li><a href="/product2">System 2</a></li>
+                        <li><a href="/product3">System 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="/usecases">Use Cases</a></li>
+                <li><a href="/about">About us</a></li>
+                
+            </ul>
+            <a class="nav-btn" href="/contact">Book Demo</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <video autoplay muted loop plays-inline id="myvideo">
+            <source src="drone_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Next Gen Agri Intelligence Platform</h1>
+            <p>Data Backed Agriculture Solutions</p>
+                <a class="hero-btn" href="/contact">Book Demo</a>
+        </div>
+       
+    </section>
+
+    <section id="journey" class="journey-container">
+        <div class="about-section">
+            <h1>A Journey of Innovation in Agriculture</h1>
+            <div class="about-section-content">
+                <p class="a-con">Satcard is revolutionizing agriculture with smart technology solutions designed to optimize farming practices and increase efficiency. Our mission is to empower farmers with cutting-edge tools and techniques that enhance productivity, sustainability, and profitability. We are dedicated to bringing the benefits of modern technology to rural farming communities across India.</p>
+                <p class="a-con">At Satcard, we partner with progressive farmers who are eager to embrace the future of farming. We provide comprehensive training and support on advanced agricultural practices, precision farming, and data-driven decision-making. Our solutions include IoT devices for real-time monitoring, automated irrigation systems, and AI-powered analytics to ensure optimal crop management.</p>
+            </div>
+        </div>
+    
+        <div class="wrapper">
+            <div class="wrapper-heading">
+                <h2>Environmental Impact Metre</h2>
+            </div>
+            <div class="outer">
+              <div class="card" style="--delay:-1;">
+                <div class="content">
+                  <div class="img"><img src="manage-icon.svg" alt=""></div>
+                  <div class="details">
+                    <span class="name">Manholes Cleaned</span>
+                  </div>
+                </div>
+                <p>Values</p>
+              </div>
+              <div class="card" style="--delay:0;">
+                <div class="content">
+                  <div class="img"><img src="reduce-icon.svg" alt=""></div>
+                  <div class="details">
+                    <span class="name">Metrices Inspected</span>
+                  </div>
+                </div>
+                <p>Values</p>
+              </div>
+              <div class="card" style="--delay:1;">
+                <div class="content">
+                  <div class="img"><img src="optimize-icon.svg" alt=""></div>
+                  <div class="details">
+                    <span class="name">Water Saved</span>
+                  </div>
+                </div>
+                <p>Values</p>
+              </div>
+              <div class="card" style="--delay:2;">
+                <div class="content">
+                  <div class="img"><img src="verify-icon.svg" alt=""></div>
+                  <div class="details">
+                    <span class="name">Power Saved</span>
+                  </div>
+                </div>
+                <p>Values</p>
+              </div>
+              <div class="card" style="--delay:2;">
+                <div class="content">
+                  <div class="img"><img src="maximize-icon.svg" alt=""></div>
+                  <div class="details">
+                    <span class="name">Increased Yield</span>
+                  </div>
+                </div>
+                <p>Values</p>
+              </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="revin-new-animation">
+        <!-- <h2>Revin Systems 3D Carousel</h2> -->
+        <div class="revin-new-slideshow">
+            <div class="revin-new-left-part">
+                <div class="revin-new-sys-logo">
+                    <img src="logo2.png" alt="logo">
+                </div>
+                <div class="revin-new-controls">
+                    <a data-index="1" class="current-link" onclick="moveToFirst(this)">System 1</a>
+                    <a data-index="2" onclick="moveToFirst(this)">System 2</a>
+                    <a data-index="3" onclick="moveToFirst(this)">System 3</a>
+                    <a data-index="4" onclick="moveToFirst(this)">System 4</a>
+                </div>
+                
+                
+                <div class="revin-new-left-part-content">
+                    <div class="revin-system-desc current-content" id="revin-system1">
+                        <p>Content for System 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempora perferendis odit deleniti perspiciatis labore quisquam quidem hic cum laudantium! Laborum suscipit eius praesentium optio doloribus aspernatur inventore reiciendis sed! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fugiat sunt aperiam inventore. Obcaecati, sunt. Corporis harum asperiores quaerat sit.</p>
+                        <a class="revin-read-more" onclick="readMore()">Read More</a>
+                    </div>
+                    <div class="revin-system-desc" id="revin-system2">
+                        <p>Content for System 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni eligendi vel fuga doloribus omnis. Velit eaque, sapiente consectetur nulla at ab magni facere possimus omnis totam consequuntur cum quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis odit est officia odio culpa sed adipisci nisi sint deleniti error.</p>
+                        <a class="revin-read-more" onclick="readMore()">Read More</a>
+                    </div>
+                    <div class="revin-system-desc" id="revin-system3">
+                        <p>Content for System 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam placeat qui fugit voluptas, pariatur rem, nostrum vero fugiat vitae minus ut. Consectetur quisquam totam similique odit dolorum earum vero? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis culpa omnis repellendus tempora fugiat excepturi animi, possimus facere asperiores minus?</p>
+                        <a class="revin-read-more" onclick="readMore()">Read More</a>
+                    </div>
+                    <div class="revin-system-desc" id="revin-system4">
+                        <p>Content for System 4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci inventore cumque in illum quasi, optio consectetur obcaecati saepe incidunt molestias quo similique quidem excepturi assumenda suscipit id rem dolorem quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo fuga maxime, eum ipsam et hic cupiditate omnis sunt dicta!</p>
+                        <a class="revin-read-more" onclick="readMore()">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="revin-new-carousel">
+                <div class="revin-new-slide current-slide">
+                    <img src="sys3.png" />
+                </div>
+                <div class="revin-new-slide">
+                    <img src="sys4.png" />
+                </div>
+                <div class="revin-new-slide">
+                    <img src="drone-png.png" />
+                </div>
+                <div class="revin-new-slide">
+                    <img src="drone-png2.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <div class="featured" >
+        <div class="feature-content">
+            <h1 class="section-title">Make Your Mark with Revin Krishi</h1>
+            <p>Delivering top-notch business results requires high-quality, accurate data. Look no further. Whatever your goal, Revin Krishi can help you achieve your desired outcome.</p>
+        </div>
+        
+        <div class="client-in">
+           <ul>
+            <li>
+                <div class="client-in-content">
+                    <img src="manage-icon.svg" alt="Manage Farm Logistics">
+                    <p>Manage Farm Logistics</p>
+                </div>
+                
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="reduce-icon.svg" alt="Reduce Pesticide Use">
+                    <p>Reduce Pesticide Use</p>
+                </div>
+                
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="optimize-icon.svg" alt="Optimize Water & Nutrients">
+                    <p>Optimize Water & Nutrients</p>
+                </div>
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="maximize-icon.svg" alt="Maximize Yield & Quality">
+                    <p>Maximize Yield & Quality</p>
+                </div>
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="verify-icon.svg" alt="Verify Sustainability Impact">
+                    <p>Verify Sustainability Impact</p>   
+                </div>
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="streamline-icon.svg" alt="Streamline Food Supply Chain">
+                    <p>Streamline Food Supply Chain</p>
+                </div>
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="power-icon.svg" alt="Power Agronomic Advice">
+                    <p>Power Agronomic Advice</p>
+                </div>   
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="accelerate-icon.svg" alt="Accelerate R&D">
+                    <p>Accelerate R&D</p>
+                </div>  
+            </li> 
+            <li>
+                <div class="client-in-content">
+                    <img src="manage-icon.svg" alt="Manage Farm Logistics">
+                    <p>Manage Farm Logistics</p>
+                </div>
+                
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="reduce-icon.svg" alt="Reduce Pesticide Use">
+                    <p>Reduce Pesticide Use</p>
+                </div>
+                
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="optimize-icon.svg" alt="Optimize Water & Nutrients">
+                    <p>Optimize Water & Nutrients</p>
+                </div>
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="maximize-icon.svg" alt="Maximize Yield & Quality">
+                    <p>Maximize Yield & Quality</p>
+                </div>
+            </li>
+            <li>
+                <div class="client-in-content">
+                    <img src="verify-icon.svg" alt="Verify Sustainability Impact">
+                    <p>Verify Sustainability Impact</p>   
+                </div>
+            </li>
+           </ul>
+        </div>
+    </div>
+
+    <section class="request-services-section">
+        <div class="request-services-heading">
+            <h1>Making <span>Space Technology</span> Accessible to Businesses</h1>
+        </div>
+        <div class="request-services-container">
+            <div class="request-service-box">
+                <img src="service-icon.png" alt="Consulting Icon">
+                <h3>Consulting</h3>
+                <p>At the heart of our business lies joint problem-solving with our clients, using our technology expertise and their industry experience aligned with their goals.</p>
+            </div>
+            <div class="request-service-box">
+                <img src="service-icon-2.png" alt="Tech Capabilities Icon">
+                <h3>Deep Tech Capabilities</h3>
+                <p>We extract valuable insights by identifying patterns and integrating multi-source data for making the right decisions.</p>
+            </div>
+            <div class="request-service-box">
+                <img src="service-icon.png" alt="Data Infrastructure Icon">
+                <h3>Software and Data Infrastructure</h3>
+                <p>We build software and data infrastructures to generate the true value of our insights for clients, ensuring seamless integration across the organization at scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="request-hero-section">
+        <div class="request-hero-content">
+            <h1>Take a guided tour of SatSure Sparta at your preferred time and pace.</h1>
+            <a href="/contact" class="request-cta-button">Request Demo</a>
+        </div>
+    </section>
+
+    <!-- <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimomnial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, consequuntur. Facilis suscipit doloribus quisquam. Facere, ut. Deleniti voluptas tempore provident ratione consequuntur dolorem veritatis beatae.</p>
+                            <h3>Sarah</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="person1.jpg" alt="Client 1">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, consequuntur. Facilis suscipit doloribus quisquam. Facere, ut. Deleniti voluptas tempore provident ratione consequuntur dolorem veritatis beatae.</p>
+                            <h3>Jane</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="person2.jpg" alt="Client 2">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, consequuntur. Facilis suscipit doloribus quisquam. Facere, ut. Deleniti voluptas tempore provident ratione consequuntur dolorem veritatis beatae.</p>
+                            <h3>Marry</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="person3.jpg" alt="Client 3">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, consequuntur. Facilis suscipit doloribus quisquam. Facere, ut. Deleniti voluptas tempore provident ratione consequuntur dolorem veritatis beatae.</p>
+                            <h3>John</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="person4.jpg" alt="Client 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="indicator">
+                <span class="indicator-btn active"></span>
+                <span class="indicator-btn"></span>
+                <span class="indicator-btn"></span>
+                <span class="indicator-btn"></span>
+            </div>
+        </div>
+    </section>
+     -->
+   
+    <footer class="footer">
+        <div class="contact">
+            <div class = "icon-div">
+                <div class="icon_container">
+                    <img src="phone1.png" class="icon first-icon">
+                    <p class="detail-con phone_first">Phone</p>
+                    <p class="detail_value phone_first">2222222222</p>
+                </div>
+                <div class="icon_container">
+                    <img src="email.png" class="icon">
+                    <p class="detail-con">Email</p>
+                    <p class="detail_value">abc@gmail.com</p>
+                </div>
+                <div class="icon_container">
+                    <img src="locate.png" class="icon ca">
+                    <p class="detail-con">Office Location</p>
+                    <p class="detail_value">Palakkad, Kerala</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class = "links">
+        
+        <div class ="links-div">
+            <div class="link_ele">
+                <img src ="logo.png" class="logo-img">
+                 
+                
+                <div class = "revin-cont">
+                    <p class = "link-css-con logo-bel-con">Revin Krishi is a leading centre developing 
+                    efficient and affordable
+                    technological solutions in agriculture, with a vision to impact
+                    over 5 million farmers in India by 2030. Connect with us using the
+                    following below social media links</p>
+                    <!-- <p class = "link-css-con"></p> -->
+                    <div class="social-media">
+                        <a href= "https://www.facebook.com" target="_blank"><img src= "facebook.png" class ="social-icon social-first"></a>
+                        <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/" target="_blank"><img src= "linkedIn.png" class ="social-icon social-first"></a>
+                        <a href= "https://www.instagram.com" target="_blank"><img src= "instagram.png" class ="social-icon"></a>
+                        <a href= "https://www.twitter.com" target="_blank"><img src= "twitter.png" class ="social-icon"></a>
+                    </div>
+                    </div>
+            </div>
+            <div class= "quick">
+                <div class="quick-links">
+                    <p class = "heading1">Quick Links</p>
+                    <a href= "#" class="links-click"><p class = "link-css link-first">Home</p></a>
+                    <a href= "#"  ><p class = "link-css">About</p></a>
+                    <a href= "#" ><p class = "link-css">Solutions</p></a>
+                    <a href= "#" ><p class = "link-css">Contact</p></a>
+                    <a href= "#" ><p class = "link-css">Crops</p></a>
+                    <a href= "#" ><p class = "link-css">Resource</p></a>
+                </div>
+            </div>
+            <div>
+                <div class="useful-links">
+                    <p class = "heading1" >Useful Links</p>
+                    <a href= "#"><p class = "link-css link-first">Terms and Conditions</p></a>
+                    <a href= "#"><p class = "link-css">Privacy Policy</p></a>
+                    <a href= "#"><p class = "link-css">FAQs</p></a>
+                    
+                </div>
+            </div>
+            <div class="download-links-div">
+                <div class="download-links">
+                    <p class = "heading1">Download App</p>
+                    <p class = "link-css-con link-first">For more convenience download our app
+                    from the links below</p>
+                    <a href= "#"><img src = "apple.png" class ="down-img down-img-first"></a>
+                    <a href= "#"><img src = "android.png" class ="down-img"></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class = "copy-div">
+            <p class = "copy">Copyright @ 2024 all rights reserved</p>
+        </div>
+        
+    </div>
+
+    
+    </footer>
+
+
+<script>
+   function moveToFirst(element) {
+    // Remove 'moved' class from any element to reset previous states
+    document.querySelectorAll('.revin-new-controls a').forEach(function(link) {
+        link.classList.remove('moved', 'current-link');
+    });
+
+    // Add 'moved' class to the clicked element to move it next to the logo
+    element.classList.add('moved', 'current-link');
+}
+
+
+
+</script> 
+
+<script>
+    const carousel = document.querySelector(".revin-new-carousel");
+const controlLinks = document.querySelectorAll(".revin-new-controls a");
+const contentSections = document.querySelectorAll(".revin-system-desc");
+
+let curr_Index = 0, // Initialize rotation index for the system links
+    rotationIndex = 1,  // Initialize rotation index for carousel
+    activeIndex = 1,    // Track current carousel slide
+    intervalId;
+
+// Function to move system link next to logo
+function moveToFirstAuto() {
+    // Remove 'moved' and 'current-link' classes from all links
+    controlLinks.forEach(function(link) {
+        link.classList.remove('moved', 'current-link');
+    });
+
+    // Find the current link and move it next to the logo
+    const currentLink = controlLinks[curr_Index];
+    currentLink.classList.add('moved', 'current-link');
+
+    // Sync with the carousel's active slide
+    changeSlide(curr_Index + 1);
+
+    // Update index for the next system link
+    curr_Index = (curr_Index + 1) % controlLinks.length; // Cycle through links
+}
+
+// Function to change the slide and content for the carousel
+function changeSlide(index) {
+    const totalSlides = controlLinks.length;
+
+    // Rotate the carousel
+    carousel.style.rotate = `-${(rotationIndex - 1 + index) * 90}deg`;
+
+    // Update the active slide
+    document.querySelector(".revin-new-slide.current-slide").classList.remove("current-slide");
+    const activeSlide = document.querySelector(`.revin-new-slide:nth-child(${index})`);
+    activeSlide.classList.add("current-slide");
+
+    // Update the active link (also move it next to the logo)
+    document.querySelector("a.current-link").classList.remove("current-link");
+    controlLinks[index - 1].classList.add("current-link");
+
+    // Update the active content
+    document.querySelector(".revin-system-desc.current-content").classList.remove("current-content");
+    const activeContent = document.querySelector(`#revin-system${index}`);
+    activeContent.classList.add("current-content");
+
+    // Update current index for the next rotation
+    activeIndex = index;
+}
+
+// Function to start the automatic slideshow
+function startAutomaticSlideshow() {
+    intervalId = setInterval(() => {
+        activeIndex = (activeIndex % controlLinks.length) + 1;
+        moveToFirstAuto(); // This function now also handles the carousel sync
+    }, 3000); // Change every 3 seconds
+}
+
+// Function to reset the interval for automatic slideshow
+function resetSlideshowInterval() {
+    clearInterval(intervalId); // Stop current interval
+    startAutomaticSlideshow(); // Restart the interval
+}
+
+// Event listeners for manual control
+controlLinks.forEach((control) => {
+    control.addEventListener("click", () => {
+        clearInterval(intervalId); // Stop auto-changing when manually clicked
+        const index = Number(control.dataset.index);
+        changeSlide(index);  // Change to clicked slide
+        resetSlideshowInterval(); // Restart auto after the manual change
+    });
+});
+
+// Pause auto-slide on hover over the carousel
+carousel.addEventListener("mouseenter", () => {
+    clearInterval(intervalId);
+    console.log("Pause");
+});
+
+// Resume auto-slide when the mouse leaves the carousel
+carousel.addEventListener("mouseleave", () => {
+    resetSlideshowInterval();
+    console.log("Play");
+});
+
+// Start the automatic system and carousel synchronization
+startAutomaticSlideshow();
+
+    
+</script>
+        
+<script>
+var indicatorbtn = document.getElementsByClassName("indicator-btn");
+var slide = document.getElementById("slide");
+var currentIndex = 0;
+var autoScrollInterval;
+
+// Function to update the indicator buttons
+function updateIndicator(index) {
+    for (var i = 0; i < indicatorbtn.length; i++) {
+        indicatorbtn[i].classList.remove("active");
+    }
+    indicatorbtn[index].classList.add("active");
+}
+
+// Function to go to the next slide
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % indicatorbtn.length;
+    slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateIndicator(currentIndex);
+}
+
+// Function to go to the previous slide
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + indicatorbtn.length) % indicatorbtn.length;
+    slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateIndicator(currentIndex);
+}
+
+// Function to start automatic scrolling
+function startAutoScroll() {
+    autoScrollInterval = setInterval(nextSlide, 3000); // Change every 3 seconds
+}
+
+// Function to stop automatic scrolling
+function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+}
+
+// Event listeners for indicator buttons
+for (let i = 0; i < indicatorbtn.length; i++) {
+    indicatorbtn[i].onclick = function () {
+        stopAutoScroll(); // Stop auto-scroll when manually changing slides
+        currentIndex = i;
+        slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+        updateIndicator(currentIndex);
+        startAutoScroll(); // Restart auto-scroll
+    };
+}
+
+// Start automatic scrolling when the page loads
+startAutoScroll();
+
+// Add event listeners for next and previous buttons
+document.querySelector('.next').addEventListener('click', function () {
+    stopAutoScroll(); // Stop auto-scroll when manually changing slides
+    nextSlide();
+    startAutoScroll(); // Restart auto-scroll
+});
+
+document.querySelector('.prev').addEventListener('click', function () {
+    stopAutoScroll(); // Stop auto-scroll when manually changing slides
+    prevSlide();
+    startAutoScroll(); // Restart auto-scroll
+});
+
+</script>
+
+ <script src="../backend/script.js"></script>
+
+<script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const anchorTags = document.querySelectorAll('footer a');
+        
+        anchorTags.forEach(anchor => {
+            anchor.addEventListener('mouseenter', () => {
+                anchor.classList.add('hover-effect');
+            });
+    
+            anchor.addEventListener('mouseleave', () => {
+                anchor.classList.remove('hover-effect');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

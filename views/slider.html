@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/slider.css" />
+    <!-- <script src="app.js" defer></script> -->
+    <title>Circle Slider</title>
+  </head>
+  <body>
+    
+
+    <div class="slideshow">
+      <div class="controls">
+        <a href="#" data-index="1" class="active">
+          <h1>System 1</h1>
+          <!-- <img src="../public/system1.jpg" /> -->
+        </a>
+        <a href="#" data-index="2">
+          <h1>System 2</h1>
+          <!-- <img src="../public/system2.jpg" /> -->
+        </a>
+        <a href="#" data-index="3">
+          <h1>System 3</h1>
+          <!-- <img src="../public/system3.jpg" /> -->
+        </a>
+      </div>
+      <div class="carousel">
+        <div class="slide active">
+          <img src="../public/system1.jpg" />
+        </div>
+        <div class="slide">
+          <img src="../public/system2.jpg" />
+        </div>
+        <div class="slide">
+          <img src="../public/system3.jpg" />
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+        const carousel = document.querySelector(".carousel");
+        const slides = document.querySelectorAll(".slide");
+        const controlLinks = document.querySelectorAll(".controls a");
+
+        let i = 0,
+          j = 1,
+          intervalId;
+
+        const intervalFn = () => {
+          intervalId = setInterval(() => {
+            carousel.style.rotate = `-${++i * 120}deg`;
+
+            document.querySelector(".slide.active").classList.remove("active");
+            const activeSlide = document.querySelector(`.slide:nth-child(${++j})`);
+            activeSlide.classList.add("active");
+
+            document.querySelector("a.active").classList.remove("active");
+            const activeLink = document.querySelector(`.controls a:nth-child(${j})`);
+            activeLink.classList.add("active");
+
+            j === 3 && (j = 0);
+          }, 4000);
+        };
+
+        intervalFn();
+
+        controlLinks.forEach((control) => {
+          control.addEventListener("click", () => {
+            clearInterval(intervalId);
+            carousel.style.rotate = `-${
+              (i - j + Number(control.dataset.index)) * 120
+            }deg`;
+
+            document.querySelector(".slide.active").classList.remove("active");
+            const activeSlide = document.querySelector(
+              `.slide:nth-child(${control.dataset.index})`
+            );
+            activeSlide.classList.add("active");
+
+            document.querySelector("a.active").classList.remove("active");
+            control.classList.add("active");
+          });
+        });
+
+      carousel.addEventListener("mouseenter", () => {
+        clearInterval(intervalId);
+        console.log("Pause");
+      });
+
+      carousel.addEventListener("mouseleave", () => {
+        intervalFn();
+        console.log("Play");
+      });
+
+    </script>
+  </body>
+
+</html>
