@@ -1859,7 +1859,7 @@ header .logo img {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    margin-left: -38rem;
+    margin-left: -60rem;
 }
 
 .revin-new-controls {
@@ -1914,7 +1914,7 @@ header .logo img {
     /* border-radius: 8px; */
     /* background: #f9f9f9; */
     position: absolute;
-    left: 10%;
+    left: 3%;
     margin-top: 130px;
 }
 
