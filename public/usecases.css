@@ -669,9 +669,19 @@ body {
 
 /* request service section */
 .request-services-section {
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     background-color: #174417;
+}
+
+.revin-service-section-use{
+    background-color: #fff;
+}
+
+.request-serives-img{
+    height: 900px;
+    overflow: hidden;
+
 }
 
 .request-services-heading h1 {
@@ -722,6 +732,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .request-serives-img{
+        /* width: 80%; */
+        height: auto;
+        overflow: hidden;
+    
+    }
     .request-service-box {
         flex-basis: 100%;
         margin-bottom: 20px;
@@ -733,6 +749,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    .request-serives-img{
+        /* width: 300px; */
+        height: auto;
+        overflow: hidden;
+    
+    }
     .request-services-heading h1 {
         font-size: 1.5rem;
     }
