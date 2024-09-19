@@ -1728,7 +1728,8 @@ header .logo img {
     flex-direction: column;
     position: relative;
     gap: 20px;
-    margin-left: -250px;
+    margin-left: -150px;
+    margin-top: 100px;
 }
 
 .card {
@@ -1845,7 +1846,7 @@ header .logo img {
 }
 
 .revin-new-slideshow {
-    height: 700px;
+    height: 950px;
     /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
@@ -1871,6 +1872,8 @@ header .logo img {
 
 .revin-new-controls{
     margin-right: 20px;
+    margin-left: -36px;
+    margin-top: -25px;
 }
 
 .revin-new-sys-logo{
@@ -1895,9 +1898,9 @@ header .logo img {
     transition: margin-right 1s;
 }
 
-.revin-new-controls a.current-link {
+/* .revin-new-controls a.current-link {
     background-color: #7dbd77;
-}
+} */
 
 .revin-new-controls a.moved {
     order: -1; /* Moves the clicked link to the first position */
@@ -1905,6 +1908,15 @@ header .logo img {
 }
 
 
+.revin-new-controls a.selected-link::after {
+    content: '';
+    position: absolute;
+    width: 40%; /* Make the line as wide as the link */
+    height: 3px; /* Thickness of the line */
+    background-color: #11afab; /* Same color as the background of the current link */
+    top: 70px; /* Position it below the link */
+    right: 30px;
+}
 
 .revin-new-left-part-content{
     width: 500px;
@@ -2018,4 +2030,30 @@ header .logo img {
 .mobile_img{
     width:40%;
     height:50%;
+}
+.log{
+    width: 60px;  /* Set desired width */
+    height: 80px; /* Set desired height */
+    object-fit: cover;
+}
+.skypulse{
+    width: 150px;  /* Set desired width */
+    height: 80px; /* Set desired height */
+    object-fit: cover;
+}
+.sight{
+    width: 80px;  /* Set desired width */
+    height: 80px; /* Set desired height */
+    object-fit: cover;
+}
+.products-glance{
+        position: relative;
+        bottom: 0;
+        color: #000000;
+        width: 100%;
+        padding: 20px;
+        margin-left: 70%;
+}
+.products-glance h1 {
+    font-size: 50px;
 }
