@@ -278,6 +278,7 @@ body, html{
   .contact-div {
     grid-template-columns: 1fr;
     z-index: revert-layer;
+    /* position: relative; */
   }
 
   .contact-info:before {
@@ -316,6 +317,7 @@ body, html{
 @media (max-width: 480px) {
   .contact-container {
     padding: 1.5rem;
+    pointer-events: none;
   }
 
   .contact-info:before {
@@ -330,6 +332,7 @@ body, html{
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
+    position: relative;
   }
 
   .text,
