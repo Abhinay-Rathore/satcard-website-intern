@@ -267,7 +267,6 @@ body {
 
 .image-section {
     flex: 0.6;
-    height: 580px;
     object-fit: cover;
 }
 
@@ -278,7 +277,7 @@ body {
 
 .text-section {
     flex: 1;
-    height: 580px;
+    height: 100%;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -670,9 +669,19 @@ body {
 
 /* request service section */
 .request-services-section {
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     background-color: #174417;
+}
+
+.revin-service-section-use{
+    background-color: #fff;
+}
+
+.request-serives-img{
+    height: 900px;
+    overflow: hidden;
+
 }
 
 .request-services-heading h1 {
@@ -723,6 +732,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .request-serives-img{
+        /* width: 80%; */
+        height: auto;
+        overflow: hidden;
+    
+    }
     .request-service-box {
         flex-basis: 100%;
         margin-bottom: 20px;
@@ -734,6 +749,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    .request-serives-img{
+        /* width: 300px; */
+        height: auto;
+        overflow: hidden;
+    
+    }
     .request-services-heading h1 {
         font-size: 1.5rem;
     }
@@ -766,9 +787,15 @@ body {
     padding: 20px;
 }
 
-h1 {
+.request-hero-content h1 {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.request-hero-content p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 25px 0;
 }
 
 .request-cta-button {
